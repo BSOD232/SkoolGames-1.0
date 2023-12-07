@@ -42,6 +42,7 @@ var says = [
   "amog",
   "💀",
   "hey e-kitten",
+  "are you piss because urine my heart"
 ];
 
 function splashText() {

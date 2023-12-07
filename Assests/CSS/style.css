@@ -20,6 +20,14 @@ a:hover {
 h1 {
   font-family: Calibri, "Trebuchet MS", sans-serif;
 }
+.no-highlight {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 .Normal-Button {
     margin: 5px 10px;
     background-color: var(--btn-accent);
