@@ -61,4 +61,8 @@ document.getElementById("GameSearchBar").addEventListener("input", () => {
 
 addGames();
 
+function WidgetBot() {
+  window.open("https://dsc.gg/skoolgames")
+}
+
 // dont mind this

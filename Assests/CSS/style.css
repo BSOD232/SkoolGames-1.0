@@ -227,6 +227,85 @@ h1 {
   margin: 5px 10px;
 }
 
+/* Games Page */
+.Games-Frame {
+  z-index: 9999;
+  display: block;
+  height: 100vh;
+  width: 100%;
+}
+.Games-IFrame {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+.Games-FrameBar {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+  text-align: center;
+  color: var(--text-color1);
+  padding: 0.75em;
+  background: var(--btn-accent2);
+  border-radius: var(--btn-rounding);
+  width: fit-content;
+  right: 0;
+  height: fit-content;
+  position: absolute;
+  margin: 15px 15px 0 0;
+  font-size: 20px;
+  box-shadow: 0 0 10px var(--btn-box-shadow);
+}
+.Games-FrameBar:hover {
+  cursor: pointer;
+}
+.Games-Container {
+  padding: 2.5em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: center;
+}
+.Games-Game {
+  animation: zoom-in-fade 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+  border-radius: var(--btn-rounding);
+  padding: 0.75em;
+  height: fit-content;
+  width: 12.5em;
+  background-color: var(--btn-accent);
+  color: var(--text-color1);
+  transition: 0.75s;
+  box-shadow: 0 0 10px 5px var(--btn-box-shadow);
+}
+.Games-Game:hover {
+  scale: 1.1;
+  transition: 0.75s;
+  cursor: pointer;
+}
+.Games-Container img {
+  border-radius: var(--btn-rounding);
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+.Games-Container h1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  font-size: large;
+  color: var(--text-color1);
+}
+
+.Games-Games-Iframe {
+  justify-content: center;
+  text-align: center;
+}
+
 /* Animations */
 
 @keyframes shake {
