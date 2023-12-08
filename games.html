@@ -23,27 +23,38 @@
         </div>
     </nav>
 
-    <div class="Index-Container"> <div>
-            <h1>Skool Hub</h1>
-        <div class="no-highlight">
-            <p onclick="splashText()" class="Index-SplashText">Enable Javascript</p>
+    <div class="Games-Frame hidden">
+        <div class="Games-FrameBar">
+            <i id="close" class="las la-times-circle"></i>
+            <i id="fullscreen" class="las la-expand"></i>
+            <i id="link" class="las la-link"></i>
         </div>
-    </div> </div>
+        <iframe class="Games-IFrame" src=""></iframe>
+    </div>
 
-    <div class="Index-BottomBar">
-        <a href="https://discord.gg/x7MJhXxeEh">
-            <h1 class="Index-BottomBar-Text">Report Bug</h1>
-        </a>
-        <a onclick="RailinAboutBlank()">
-            <h1 class="Index-BottomBar-Text">Open in About:Blank</h1>
-        </a> 
-        <a href="https://discord.gg/x7MJhXxeEh">
-            <h1 class="Index-BottomBar-Text">Discord</h1>
-        </a> 
+    <div class="hideAfterFullscreen">
+        <center>
+            <h1 style="margin-top: 25px; color: var(--text-color1)">Games</h1>
+            <p style="margin-bottom: 25px;"><a style="color: var(--text-color1); text-decoration: underline;" href="https://docs.google.com/forms/d/e/1FAIpQLSdOKDMtkxwOPpRBshqtlF0MSrZwaTmWsgn1-MtPH8RYl1RtAQ/viewform?usp=sf_link">Request A Game</a></p>
+        </center>
+        <hr>
+        <center style="padding: 2em 0 0 0">
+
+            <input type="text" class="Settings-TextInput" id="GameSearchBar" placeholder="Search For Game">
+        </center>
+    </div>
+
+    <div class="Games-Container hideAfterFullscreen">
+        <div class="Games-Game">
+            <a onclick="openSM64()">
+                <img src="./Assests/Imgs/games/SM64.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+                <h1>Super Mario 64</h1>
+            </a>
+        </div>
     </div>
 
     <script src="./Assests/JS/aboutblank.js"></script>
     <script src="./Assests/JS/options.js"></script>
-    <script src="./Assests/JS/index.js"></script>
+    <script src="./Assests/JS/games.js"></script>
 </body>
 </html>
