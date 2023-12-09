@@ -13,7 +13,7 @@ var says = [
   "blogs was usless",
   "so was secrets",
   "Tempus fugit ⏰",
-  "shoutout to skool devs (me)",
+  "shoutout to skool devs (me, htesdev, and GhostedZoomer)",
   "no you shouldnt skid it",
   "what do i add?",
   "*you're* 👆🤓",

@@ -30,6 +30,10 @@ function create(urlThingyHere) {
   }
 }
 
+function openInAboutBlank() {
+  create("./index.html")
+}
+
 function WidgetBot() {
   create(protocolThingy + "/Assests/Others/WidgetBot.html");
 }

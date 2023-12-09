@@ -1,3 +1,3 @@
-function openSM64(game) {
-    window.open("sm64.html")
+function openGame(game) {
+    window.location.href = game + ".html"
 }
