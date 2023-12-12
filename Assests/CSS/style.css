@@ -20,6 +20,10 @@ a:hover {
 h1 {
   font-family: Calibri, "Trebuchet MS", sans-serif;
 }
+h2,h3 {
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  color: var(--text-color1);
+}
 .no-highlight {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -304,6 +308,9 @@ h1 {
 .Games-Games-Iframe {
   justify-content: center;
   text-align: center;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
 }
 
 /* Animations */
