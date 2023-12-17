@@ -7,6 +7,7 @@ body.light{
     --btn-accent2: rgba(195, 195, 195, 0.75);
     --btn-box-shadow: rgba(185, 185, 185, 0.5);   
     --nav-box-hover: var(--text-color1);
+    --theme-accent: #38B6FF;
 }
 
 body.amoled{
@@ -18,6 +19,7 @@ body.amoled{
     --btn-accent2: var(--bg-accent1);
     --btn-box-shadow: var(--bg-accent1);
     --nav-box-hover: var(--bg-accent1);
+    --theme-accent: #38B6FF;
 }
 
 body{
@@ -34,4 +36,5 @@ body{
     --btn-accent2: rgba(60, 60, 60, 0.75);
     --btn-box-shadow: rgba(70, 70, 70, 0.5);
     --nav-box-hover: var(--text-color1);
+    --theme-accent: #38B6FF;
 }

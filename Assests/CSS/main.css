@@ -1,5 +1,5 @@
 /* Import Third Party CSS Files First */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
 
 /* Imports CSS Files */
 @import url('style.css');

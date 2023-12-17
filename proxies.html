@@ -23,33 +23,40 @@
         </div>
     </nav>
 
-    <div class="Games-Games-Iframe">
-        <br>
-        <iframe width="1000px" height="600px" src="Assests/Games/SM64/start.html">
-        </iframe>
-
-        <br>
-        <br>
-
-        <h2>Controls:</h2>
-
-        <br>
-
-        <h3>
-            Arrow keys: Move<br>
-            WASD: C-Stick<br>
-            C: A Button<br>
-            X: B Button<br>
-            Space: Z Button<br>
-            Q: X Button<br>
-            Enter: Start Button
-        </h3>
+    <div class="Games-Frame hidden">
+        <div class="Games-FrameBar">
+            <i id="close" class="las la-times-circle"></i>
+            <i id="fullscreen" class="las la-expand"></i>
+            <i id="link" class="las la-link"></i>
+        </div>
+        <iframe class="Games-IFrame" src=""></iframe>
     </div>
 
-    <br>
+    <div class="hideAfterFullscreen">
+        <center>
+            <h1 style="margin-top: 25px; color: var(--text-color1)">Proxies</h1>
+            <!--
+            <p style="margin-bottom: 25px;"><a style="color: var(--text-color1); text-decoration: underline;" href="https://skoolforms.drr.ac/">Request A Game</a></p> -->
+        </center>
+        <hr>
+        <center style="padding: 2em 0 0 0">
+
+            <input type="text" class="Settings-TextInput" id="GameSearchBar" placeholder="Search For Proxy">
+        </center>
+    </div>
+
+    <div class="Games-Container hideAfterFullscreen">
+        <div class="Games-Game">
+            <a onclick="openProxy('interstellar')">
+                <img src="./Assests/Imgs/proxies/interstellar.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+                <h1>Interstellar</h1>
+            </a>
+
+        </div>
+    </div>
 
     <script src="./Assests/JS/aboutblank.js"></script>
     <script src="./Assests/JS/options.js"></script>
-    <script src="./Assests/JS/games.js"></script>
+    <script src="./Assests/JS/proxies.js"></script>
 </body>
 </html>

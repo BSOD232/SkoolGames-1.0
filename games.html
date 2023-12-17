@@ -15,9 +15,9 @@
             <a class="Navigation-Image" href="./"><img src="./Assests/Imgs/Logo.png"></img></a>
             <ul>
                 <li class="Navigation-Button"><a href="./"><i class="las la-home"></i><p>Home</p></a></li>
-                <li class="Navigation-Button"><a href="./g.html"><i class="las la-file"></i><p>Projects</p></a></li>
                 <li class="Navigation-Button"><a href="./games.html"><i class="las la-file"></i><p>Games</p></a></li>
                 <li class="Navigation-Button"><a href="./e.html"><i class="las la-hourglass-half"></i><p>Emulator</p></a></li>
+                <li class="Navigation-Button"><a href="./extras.html"><i class="las la-cog"></i><p>Extras</p></a></li>
                 <li class="Navigation-Button"><a href="./settings.html"><i class="las la-cog"></i><p>Settings</p></a></li>
             <ul>
         </div>
@@ -35,29 +35,58 @@
     <div class="hideAfterFullscreen">
         <center>
             <h1 style="margin-top: 25px; color: var(--text-color1)">Games</h1>
-            <p style="margin-bottom: 25px;"><a style="color: var(--text-color1); text-decoration: underline;" href="https://docs.google.com/forms/d/e/1FAIpQLSdOKDMtkxwOPpRBshqtlF0MSrZwaTmWsgn1-MtPH8RYl1RtAQ/viewform?usp=sf_link">Request A Game</a></p>
+            <div class="Misc-Buttons">
+              <li class="Navigation-Button"><a href="https://skoolforms.drr.ac" target="_blank"><p>Request a Game</p></a></li>
+            </div>
         </center>
         <hr>
         <center style="padding: 2em 0 0 0">
-
             <input type="text" class="Settings-TextInput" id="GameSearchBar" placeholder="Search For Game">
         </center>
     </div>
 
-    <div class="Games-Container hideAfterFullscreen">
+    <div class="Games-Container hideAfterFullscreen" id="Games-List">
         <div class="Games-Game">
             <a onclick="openGame('smb')">
                 <img src="./Assests/Imgs/games/smb.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
-                <h1>Super Mario Bros.</h1>
+                <h1 class="title">Super Mario Bros.</h1>
             </a>
-
         </div>
         <div class="Games-Game">
             <a onclick="openGame('sm64')">
                 <img src="./Assests/Imgs/games/SM64.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
-                <h1>Super Mario 64</h1>
+                <h1 class="title">Super Mario 64</h1>
             </a>
-
+        </div>
+        <div class="Games-Game">
+            <a onclick="openGame('tunnelrush')">
+                <img src="./Assests/Imgs/games/tunel-rush.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+                <h1 class="title">Tunnel Rush</h1>
+            </a>
+        </div>
+        <div class="Games-Game">
+            <a onclick="openGame('vex4')">
+                <img src="./Assests/Imgs/games/vex4.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+                <h1 class="title">Vex 4</h1>
+            </a>
+        </div>
+        <div class="Games-Game">
+            <a onclick="openGame('wallsmash')">
+                <img src="./Assests/Imgs/games/wallsmash.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+                <h1 class="title">Wall Smash</h1>
+            </a>
+        </div>
+        <div class="Games-Game">
+            <a onclick="openGame('wordle')">
+                <img src="./Assests/Imgs/games/wordle.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+                <h1 class="title">Wordle</h1>
+            </a>
+        </div>
+        <div class="Games-Game">
+            <a onclick="openGame('zombs')">
+                <img src="./Assests/Imgs/games/zombs.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+                <h1 class="title">Zombs Royale</h1>
+            </a>
         </div>
     </div>
 

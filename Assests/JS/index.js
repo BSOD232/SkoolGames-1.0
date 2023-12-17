@@ -61,3 +61,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
       splashText();
     });
 });
+
+window.onload = function () {
+  if (/Mobi|Android/i.test(navigator.userAgent)) {
+    document.body.style.display = 'none';
+    alert('Mobile devices are not supported');
+  }
+};
