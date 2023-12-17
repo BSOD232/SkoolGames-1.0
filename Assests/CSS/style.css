@@ -475,16 +475,19 @@ h2,h3 {
   background-color: var(--btn-accent);
   border-radius: var(--btn-rounding);
   border: 1px solid var(--btn-accent);
-  width: 120px;
 }
 .Resources-Button a:hover {
   border: 1px solid var(--theme-accent);
   transition: 0.75s;
 }
 
-.resources-container ul {
+.Extras-Container {
   gap: 15px;
   display: flex;
-  position: absolute;
-  transform: translate(15%);
+  justify-content: center;
+}
+
+.Credits-Container p {
+  color: var(--text-color1);
+  line-height: 2;
 }
