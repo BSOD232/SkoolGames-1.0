@@ -7,7 +7,7 @@ $ = e => document.getElementById(e) || [];
 
 $("tacogithub").href = "https://github.com/Tacosheel/TacoProxy";
 
-//Alloy Default
+//Alloy Defaul
 
 $('alloyframe').onclick = function() {
     var frame = document.getElementById("frame");
