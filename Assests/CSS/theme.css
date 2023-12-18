@@ -22,6 +22,18 @@ body.amoled{
     --theme-accent: #38B6FF;
 }
 
+body.wtfisthis {
+    --bg-accent1: rgb(255, 0, 0);
+    --bg-accent2: rgb(255, 255, 0);
+    --text-color1: rgb(255, 255, 255);
+    --text-shadow: rgb(0, 0, 0);
+    --btn-accent: rgb(0, 0, 255);
+    --btn-accent2: rgb(255, 0, 255);
+    --btn-box-shadow: rgb(200, 200, 100);
+    --nav-box-hover: rgb(255, 100, 0);
+    --theme-accent: rgb(255, 200, 200);
+}
+
 body{
     background: var(--bg-accent1);
 
