@@ -309,8 +309,13 @@ h2,h3 {
   justify-content: center;
   text-align: center;
   -ms-overflow-style: none;
-  overflow: -moz-scrollbars-none;
+  overflow: hidden;
   scrollbar-width: none;
+}
+
+iframe {
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 /* Animations */
