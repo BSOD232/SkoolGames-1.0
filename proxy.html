@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <script src="/uv/uv.bundle.js" defer></script>
-<script src="/uv/uv.config.js" defer></script>
-<script src="/register-sw.js" defer></script>
-<script src="/search.js" defer></script>
-<script src="/error.js" defer></script>
+  <script src="/uv/uv.config.js" defer></script>
+  <script src="/register-sw.js" defer></script>
+  <script src="/search.js" defer></script>
+  <script src="/error.js" defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Skool Hub</title>
@@ -30,27 +30,27 @@
 <div class="center-container">
   <h1>Search</h1>
   <form id="form">
-  <input class="pxyinput" input="pxyinput" type="text" placeholder="Search..." />
+    <input class="pxyinput" input="pxyinput" type="text" placeholder="Search..." />
   </form>
 </div>
 <div>
-<iframe class="frame"></iframe>
-<script src="./assets/scripts/index.js"></script>
-<script src="./contact/bundle.js"></script>
-<script src="./contact/config.js"></script>
-<script src="https://kit.fontawesome.com/1237c86ba0.js" crossorigin="anonymous"></script>
+  <iframe class="frame"></iframe>
+  <script src="./assets/scripts/index.js"></script>
+  <script src="./contact/bundle.js"></script>
+  <script src="./contact/config.js"></script>
+  <script src="https://kit.fontawesome.com/1237c86ba0.js" crossorigin="anonymous"></script>
 </div>
 <script>
   document.getElementsByClassName("form")[0].addEventListener("submit", async (event) => {
-      event.preventDefault();
-      try {
-        await registerSW();
-      } catch (err) {
-        alert(err.toString());
-        throw err;
-      }
-      const url = search(document.getElementsByClassName("pxyinput")[0].value, "https://www.google.com/search?q=%s");
-      window.location.href=__uv$config.prefix + __uv$config.encodeUrl(url);
+    event.preventDefault();
+    try {
+      await registerSW();
+    } catch (err) {
+      alert(err.toString());
+      throw err;
+    }
+    const url = search(document.getElementsByClassName("pxyinput")[0].value, "https://www.google.com/search?q=%s");
+    window.location.href=__uv$config.prefix + __uv$config.encodeUrl(url);
   });
 </script>
 </body>
