@@ -499,3 +499,13 @@ iframe {
   color: var(--text-color1);
   line-height: 2;
 }
+
+.credits-btn {
+  width: 30px;
+  margin-left: 10px;
+  position: absolute;
+}
+
+.credits-btn:hover {
+  cursor: pointer;
+}
