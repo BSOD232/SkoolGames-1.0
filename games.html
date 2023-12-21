@@ -6,92 +6,341 @@
     <title>Skool Hub</title>
     <link rel="icon" type="image/png" href="./Assests/Imgs/Logo.png">
     <link rel="stylesheet" type="text/css" href="./Assests/CSS/main.css">
-    <link rel="stylesheet" type="text/css" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
 <body class="default">
-    
-    <nav class="Navigation">
-        <div class="Navigation-Container">
-            <a class="Navigation-Image" href="./"><img src="./Assests/Imgs/Logo.png"></img></a>
-            <ul>
-                <li class="Navigation-Button"><a href="./"><i class="las la-home"></i><p>Home</p></a></li>
-                <li class="Navigation-Button"><a href="./games.html"><i class="las la-file"></i><p>Games</p></a></li>
-                <li class="Navigation-Button"><a href="./e.html"><i class="las la-hourglass-half"></i><p>Emulator</p></a></li>
-                <li class="Navigation-Button"><a href="./extras.html"><i class="las la-cog"></i><p>Extras</p></a></li>
-                <li class="Navigation-Button"><a href="./settings.html"><i class="las la-cog"></i><p>Settings</p></a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <div class="Games-Frame hidden">
-        <div class="Games-FrameBar">
-            <i id="close" class="las la-times-circle"></i>
-            <i id="fullscreen" class="las la-expand"></i>
-            <i id="link" class="las la-link"></i>
-        </div>
-        <iframe class="Games-IFrame" src=""></iframe>
+<nav class="Navigation">
+    <div class="Navigation-Container">
+        <a class="Navigation-Image" href="./"><img src="./Assests/Imgs/Logo.png"></img></a>
+        <ul>
+            <li class="Navigation-Button"><a href="./"><i class="las la-home"></i>
+                <p>Home</p></a></li>
+            <li class="Navigation-Button"><a href="./games.html"><i class="las la-file"></i>
+                <p>Games</p></a></li>
+            <li class="Navigation-Button"><a href="./e.html"><i class="las la-hourglass-half"></i>
+                <p>Emulator</p></a></li>
+            <li class="Navigation-Button"><a href="./extras.html"><i class="las la-cog"></i>
+                <p>Extras</p></a></li>
+            <li class="Navigation-Button"><a href="./settings.html"><i class="las la-cog"></i>
+                <p>Settings</p></a></li>
+        </ul>
     </div>
+</nav>
 
-    <div class="hideAfterFullscreen">
-        <center>
-            <h1 style="margin-top: 25px; color: var(--text-color1)">Games</h1>
-            <div class="Misc-Buttons">
-              <li class="Navigation-Button"><a href="https://skoolforms.drr.ac" target="_blank"><p>Request a Game</p></a></li>
-            </div>
-        </center>
-        <hr>
-        <center style="padding: 2em 0 0 0">
-            <input type="text" class="Settings-TextInput" id="GameSearchBar" placeholder="Search For Game">
-        </center>
+<div class="Games-Frame hidden">
+    <div class="Games-FrameBar">
+        <i id="close" class="las la-times-circle"></i>
+        <i id="fullscreen" class="las la-expand"></i>
+        <i id="link" class="las la-link"></i>
     </div>
+    <iframe class="Games-IFrame" src=""></iframe>
+</div>
 
-    <div class="Games-Container hideAfterFullscreen" id="Games-List">
-        <div class="Games-Game">
-            <a onclick="openGame('smb')">
-                <img src="./Assests/Imgs/games/smb.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
-                <h1 class="title">Super Mario Bros.</h1>
-            </a>
+<div class="hideAfterFullscreen">
+    <center>
+        <h1 style="margin-top: 25px; color: var(--text-color1)">Games</h1>
+        <div class="Misc-Buttons">
+            <li class="Navigation-Button"><a href="https://skoolforms.drr.ac" target="_blank"><p>Request a Game</p></a>
+            </li>
         </div>
-        <div class="Games-Game">
-            <a onclick="openGame('sm64')">
-                <img src="./Assests/Imgs/games/SM64.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
-                <h1 class="title">Super Mario 64</h1>
-            </a>
-        </div>
-        <div class="Games-Game">
-            <a onclick="openGame('tunnelrush')">
-                <img src="./Assests/Imgs/games/tunel-rush.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
-                <h1 class="title">Tunnel Rush</h1>
-            </a>
-        </div>
-        <div class="Games-Game">
-            <a onclick="openGame('vex4')">
-                <img src="./Assests/Imgs/games/vex4.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
-                <h1 class="title">Vex 4</h1>
-            </a>
-        </div>
-        <div class="Games-Game">
-            <a onclick="openGame('wallsmash')">
-                <img src="./Assests/Imgs/games/wallsmash.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
-                <h1 class="title">Wall Smash</h1>
-            </a>
-        </div>
-        <div class="Games-Game">
-            <a onclick="openGame('wordle')">
-                <img src="./Assests/Imgs/games/wordle.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
-                <h1 class="title">Wordle</h1>
-            </a>
-        </div>
-        <div class="Games-Game">
-            <a onclick="openGame('zombs')">
-                <img src="./Assests/Imgs/games/zombs.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
-                <h1 class="title">Zombs Royale</h1>
-            </a>
-        </div>
+    </center>
+    <hr>
+    <center style="padding: 2em 0 0 0">
+        <input type="text" class="Settings-TextInput" id="GameSearchBar" placeholder="Search For Game">
+    </center>
+</div>
+
+<div class="Games-Container hideAfterFullscreen" id="Games-List">
+    <div class="Games-Game">
+        <a onclick="openGame('smb')">
+            <img src="./Assests/Imgs/games/smb.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Super Mario Bros.</h1>
+        </a>
     </div>
+    <div class="Games-Game">
+        <a onclick="openGame('sm64')">
+            <img src="./Assests/Imgs/games/SM64.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Super Mario 64</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('tunnelrush')">
+            <img src="./Assests/Imgs/games/tunel-rush.png" loading="lazy"
+                 onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Tunnel Rush</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('vex4')">
+            <img src="./Assests/Imgs/games/vex4.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Vex 4</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('wallsmash')">
+            <img src="./Assests/Imgs/games/wallsmash.png" loading="lazy"
+                 onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Wall Smash</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('wordle')">
+            <img src="./Assests/Imgs/games/wordle.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Wordle</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('zombs')">
+            <img src="./Assests/Imgs/games/zombs.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Zombs Royale</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('1v1lol')">
+            <img src="./Assests/Games/1v1.lol/1v1lol/splash.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">1v1.lol</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('2048')">
+            <img src="./Assests/Games/2048/2048/2048.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">2048</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('amongus')">
+            <img src="./Assests/Games/Among%20Us/among-us/red.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Among Us (Fan Game)</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('badicecream')">
+            <img src="./Assests/Games/Bad%20Ice%20Cream/bad-ice-cream/bad-ice-cream.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Bad Ice Cream</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('badicecream2')">
+            <img src="./Assests/Games/Bad%20Ice%20Cream%202/bad-ice-cream-2/bad-ice-cream-2.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Bad Ice Cream 2</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('badicecream3')">
+            <img src="./Assests/Games/Bad%20Ice%20Cream%203/bad-ice-cream-3.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Bad Ice Cream 3</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('baldisbasic')">
+            <img src="./Assests/Games/Baldi's%20Basic/splash.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Baldi's Basics</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('basketbros')">
+            <img src="./Assests/Games/Basket%20Bros/thumb.jpg" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Basket Bros</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('bloons2')">
+            <img src="./Assests/Games/Bloons%20TD%202/bloonstd2.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Bloons Tower Defense 2</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('boxingrandom')">
+            <img src="./Assests/Games/Boxing%20Random/boxing-random/512x512.jpg" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Boxing Random</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('chess')">
+            <img src="./Assests/Games/Chess/84391856-3910-4B44-AF7E-ACF1056658C2.jpeg" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Chess</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('clusterrush')">
+            <img src="./Assests/Games/Cluster%20Rush/cluster-rush/splash.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Cluster Rush</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('cookieclicker')">
+            <img src="./Assests/Games/Cookie%20Clicker/img/goldCookie.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Cookie Clicker</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('crossyroad')">
+            <img src="./Assests/Games/Crossy%20Road/crossyroad/crossyroad.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Crossy Road</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('ducklife1')">
+            <img src="./Assests/Games/Duck%20Life%201/ducklife1/ducklife.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Duck Life 1</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('ducklife2')">
+            <img src="./Assests/Games/Duck%20Life%202/ducklife2.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Duck Life 2</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('ducklife3')">
+            <img src="./Assests/Games/Duck%20Life%203/duck.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Duck Life 3</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('ducklife4')">
+            <img src="./Assests/Games/Duck%20Life%204/ducklife4/splash.jpg" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Duck Life 4</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('fancypantsadventure')">
+            <img src="./Assests/Games/Fancy%20Pants%20Adventure/fancypantsadventure.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Fancy Pants Adventure</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('flappybird')">
+            <img src="" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Flappy Bird</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('geometrydash')">
+            <img src="./Assests/Games/Geometry%20Dash/geodash/geoscratchicon.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Geometry Dash</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('getawayshootout')">
+            <img src="./Assests/Games/Getaway%20Shootout/getaway-shootout/img/index.jpg" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Getaway Shootout</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('krunker')">
+            <img src="./Assests/Games/Krunker/krunker/img/krunker-io.jpg" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Krunker</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('minecraft18')">
+            <img src="./Assests/Games/Minecraft%2018/splash.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Minecraft 18</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('paperio2')">
+            <img src="./Assests/Games/Paper%20IO%202/paperio2/images/icon512.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Paper IO 2</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('pixelgun3d')">
+            <img src="./Assests/Games/Pixel%20Gun%203D/512x512.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Pixel Gun 3D</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('retrobowl')">
+            <img src="./Assests/Games/Retro%20Bowl/img/icon.jpg" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Retro Bowl</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('rocketleague')">
+            <img src="./Assests/Games/Rocket%20League/Rocket-League/splash.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Rocket League</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('run3')">
+            <img src="./Assests/Games/Run%203/" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Run 3</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('shellshockers')">
+            <img src="./Assests/Games/Shell%20Shockers/img/favicon.jpg" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Shell Shockers</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('slitherio')">
+            <img src="./Assests/Games/Slither%20IO/" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Slither IO</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('slopegame')">
+            <img src="./Assests/Games/Slope%20Game/slope4.jpeg" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Slope Game</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('snowrider3d')">
+            <img src="./Assests/Games/Snow%20Rider%203D/images/logo.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Snow Rider 3D</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('soccerrandom')">
+            <img src="./Assests/Games/Soccer%20Random/soccer-random/splash.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Soccer Random</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('stack')">
+            <img src="./Assests/Games/Stack/stack.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Stack</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('stickmanhook')">
+            <img src="./Assests/Games/Stickman%20Hook/images/27f62cb7fcc15256d379f7e940d7fc35-titlepow2.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Stickman Hook</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('subwaysurfers')">
+            <img src="./Assests/Games/Subway%20Surfers%20NY/assets/preload/splash_mip.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Subway Surfers</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('sushiunroll')">
+            <img src="./Assests/Games/sushi-unroll/favicon.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Sushi Unroll</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('thereisnogame')">
+            <img src="./Assests/Games/There%20Is%20No%20Game/there-is-no-game/logo.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">There Is No Game</h1>
+        </a>
+    </div>
+    <div class="Games-Game">
+        <a onclick="openGame('tinyfishing')">
+            <img src="./Assests/Games/Tiny%20Fishing/tiny-fishing/tiny-fishing.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"/>
+            <h1 class="title">Tiny Fishing</h1>
+        </a>
+    </div>
+</div>
 
-    <script src="./Assests/JS/aboutblank.js"></script>
-    <script src="./Assests/JS/options.js"></script>
-    <script src="./Assests/JS/games.js"></script>
+<script src="./Assests/JS/aboutblank.js"></script>
+<script src="./Assests/JS/options.js"></script>
+<script src="./Assests/JS/games.js"></script>
 </body>
 </html>
