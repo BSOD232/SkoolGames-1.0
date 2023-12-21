@@ -57,7 +57,7 @@ h2,h3 {
 
 .Navigation {
   width: 100%;
-  height: 70px;en
+  height: 70px;
   background: var(--bg-acct2);
   display: flex;
   border-radius: 0 0 25px 25px;
@@ -92,6 +92,7 @@ h2,h3 {
   background-color: var(--btn-accent);
   border-radius: var(--btn-rounding);
   border: 1px solid var(--btn-accent);
+  transition: 0.75s;
 }
 .Navigation-Button a:hover {
   border: 1px solid var(--theme-accent);
@@ -452,6 +453,7 @@ iframe {
   background-color: var(--btn-accent);
   border-radius: var(--btn-rounding);
   border: 1px solid var(--btn-accent);
+  transition: 0.75s;
 }
 
 .Homescreen-Button a:hover {
@@ -480,6 +482,7 @@ iframe {
   background-color: var(--btn-accent);
   border-radius: var(--btn-rounding);
   border: 1px solid var(--btn-accent);
+  transition: 0.75s;
 }
 .Resources-Button a:hover {
   border: 1px solid var(--theme-accent);
