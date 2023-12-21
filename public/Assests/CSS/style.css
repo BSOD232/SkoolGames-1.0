@@ -92,6 +92,7 @@ h2,h3 {
   background-color: var(--btn-accent);
   border-radius: var(--btn-rounding);
   border: 1px solid var(--btn-accent);
+  transition: 0.75s;
 }
 .Navigation-Button a:hover {
   border: 1px solid var(--theme-accent);
@@ -492,6 +493,7 @@ iframe {
   background-color: var(--btn-accent);
   border-radius: var(--btn-rounding);
   border: 1px solid var(--btn-accent);
+  transition: 0.75s;
 }
 
 .Homescreen-Button a:hover {
@@ -520,6 +522,7 @@ iframe {
   background-color: var(--btn-accent);
   border-radius: var(--btn-rounding);
   border: 1px solid var(--btn-accent);
+  transition: 0.75s;
 }
 .Resources-Button a:hover {
   border: 1px solid var(--theme-accent);
@@ -535,4 +538,14 @@ iframe {
 .Credits-Container p {
   color: var(--text-color1);
   line-height: 2;
+}
+
+.credits-btn {
+  width: 30px;
+  margin-left: 10px;
+  position: absolute;
+}
+
+.credits-btn:hover {
+  cursor: pointer;
 }
