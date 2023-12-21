@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="/uv/uv.bundle.js" defer></script>
+  <script src="/uv/uv.config.js" defer></script>
+  <script src="/register-sw.js" defer></script>
+  <script src="/search.js" defer></script>
+  <script src="/index.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skool Hub</title>
+  <link rel="icon" type="image/png" href="./Assests/Imgs/Logo.png">
+  <link rel="stylesheet" type="text/css" href="./Assests/CSS/main.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+
+<body class="default">
+  <nav class="Navigation">
+    <div class="Navigation-Container">
+      <a class="Navigation-Image" href="./"><img src="./Assests/Imgs/Logo.png"></img></a>
+      <ul>
+        <li class="Navigation-Button"><a href="./"><i class="las la-home"></i>
+            <p>Home</p>
+          </a></li>
+        <li class="Navigation-Button"><a href="./games.html"><i class="las la-file"></i>
+            <p>Games</p>
+          </a></li>
+        <li class="Navigation-Button"><a href="./proxy.html"><i class="las la-file"></i>
+            <p>Proxy</p>
+          </a></li>
+        <li class="Navigation-Button"><a href="./e.html"><i class="las la-hourglass-half"></i>
+            <p>Emulator</p>
+          </a></li>
+        <li class="Navigation-Button"><a href="./extras.html"><i class="las la-cog"></i>
+            <p>Extras</p>
+          </a></li>
+        <li class="Navigation-Button"><a href="./settings.html"><i class="las la-cog"></i>
+            <p>Settings</p>
+          </a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="center-container">
+    <h1>Search</h1>
+    <form id="uv-form" class="flex-center">
+      <input
+        id="uv-search-engine"
+        value="https://www.google.com/search?q=%s"
+        type="hidden"
+      />
+      <input id="uv-address" type="text" placeholder="Search the web freely" />
+    </form>
+    <div class="desc left-margin">
+      <p id="uv-error"></p>
+      <pre id="uv-error-code"></pre>
+    </div>
+  </div>
+  <div>
+    <script src="./contact/bundle.js"></script>
+    <script src="./contact/config.js"></script>
+    <script src="https://kit.fontawesome.com/1237c86ba0.js" crossorigin="anonymous"></script>
+  </div>
+</body>
+
+</html>
