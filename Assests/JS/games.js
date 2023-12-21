@@ -23,3 +23,18 @@ searchInput.addEventListener("input", function () {
 
   const visibleCards = Array.from(gameList.querySelectorAll(".game-card[style='display: block;']"));
 });
+
+const gamesContainer = document.getElementById('Games-List');
+const games = Array.from(gamesContainer.getElementsByClassName('Games-Game'));
+
+games.sort((a, b) => {
+  const titleA = a.querySelector('.title').textContent.toUpperCase();
+  const titleB = b.querySelector('.title').textContent.toUpperCase();
+  return titleA.localeCompare(titleB);
+});
+
+gamesContainer.innerHTML = '';
+
+games.forEach(game => {
+  gamesContainer.appendChild(game);
+});
